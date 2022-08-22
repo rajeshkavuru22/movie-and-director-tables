@@ -138,4 +138,6 @@ app.get("/directors/:directorId/movies/", async (request, response) => {
   response.send(
     getDirectedMovies.map((eachMovie) => gettingAllMoviesNames(eachMovie))
   );
+});
 
+module.exports = app;
